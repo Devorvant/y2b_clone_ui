@@ -1,7 +1,8 @@
-
+from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
-from fastapi import Request
 from fastapi.templating import Jinja2Templates
+
+app = FastAPI()  # <== ВАЖНО: добавлено!
 
 templates = Jinja2Templates(directory="templates")
 
